@@ -1,10 +1,10 @@
 <?php 
 
 /* Connection vars here for example only. Consider a more secure method. */
-$dbhost = 'YOUR_SERVER';
-$dbuser = 'YOUR_USERNAME';
-$dbpass = 'YOUR_PASSWORD';
-$dbname = 'YOUR_DATABASE_NAME';
+$dbhost = 'servidor';
+$dbuser = 'usuario';
+$dbpass = 'contrasena';
+$dbname = 'basededatos';
 
 $conn = mysql_connect($dbhost, $dbuser, $dbpass) or die ('Error connecting to mysql');
 mysql_select_db($dbname);
