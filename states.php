@@ -13,7 +13,7 @@ $return_arr = array();
 /* If connection to database, run sql statement. */
 if ($conn)
 {
-    $fetch = mysql_query("SELECT * FROM states where state like '%" . mysql_real_escape_string($_GET['term']) . "%'"); 
+    $fetch = mysql_query("SELECT states.* FROM states where state like '%" . mysql_real_escape_string($_GET['term']) . "%'"); 
     
     /* Retrieve and store in array the results of the query.*/
     while ($row = mysql_fetch_array($fetch, MYSQL_ASSOC)) {
